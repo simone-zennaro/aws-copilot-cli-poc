@@ -1,0 +1,17 @@
+Create a new environment:
+copilot env init
+
+Create a secret in SSM Parameter store
+copilot secret init 
+
+Deploy a new service
+copilot deploy
+
+View logs
+copilot svc logs -a sls-bcn -e dev -n custom-web
+
+Show service configuration (kubectl describe pod)
+copilot svc show -a sls-bcn -n custom-web
+
+Executes a command in a running container part of a service (only for ECS)
+copilot svc exec 
